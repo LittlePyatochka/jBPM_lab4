@@ -8,6 +8,7 @@ public class Medicament implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	@javax.persistence.Column(unique = true)
 	private java.lang.String title;
 	private MedicamentGroup group;
 
