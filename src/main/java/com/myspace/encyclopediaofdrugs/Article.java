@@ -21,6 +21,8 @@ public class Article implements java.io.Serializable {
 
 	private java.lang.Boolean isPublished;
 
+	private java.lang.String title;
+
 	public Article() {
 	}
 
@@ -99,6 +101,14 @@ public class Article implements java.io.Serializable {
 		this.isPublished = isPublished;
 	}
 
+	public java.lang.String getTitle() {
+		return this.title;
+	}
+
+	public void setTitle(java.lang.String title) {
+		this.title = title;
+	}
+
 	public Article(com.myspace.encyclopediaofdrugs.Medicament medicament,
 			com.myspace.encyclopediaofdrugs.MedicamentFormula formula,
 			com.myspace.encyclopediaofdrugs.MedicamentGroup group,
@@ -106,7 +116,7 @@ public class Article implements java.io.Serializable {
 			com.myspace.encyclopediaofdrugs.MedicamentType type,
 			java.time.OffsetDateTime dateChange, java.lang.String price,
 			java.util.List<java.lang.String> links,
-			java.lang.Boolean isPublished) {
+			java.lang.Boolean isPublished, java.lang.String title) {
 		this.medicament = medicament;
 		this.formula = formula;
 		this.group = group;
@@ -116,6 +126,7 @@ public class Article implements java.io.Serializable {
 		this.price = price;
 		this.links = links;
 		this.isPublished = isPublished;
+		this.title = title;
 	}
 
 }
