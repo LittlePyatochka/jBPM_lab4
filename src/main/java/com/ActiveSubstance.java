@@ -6,12 +6,33 @@ package com;
 
 public class ActiveSubstance implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ActiveSubstance() {
-    }
+	private java.lang.String title;
+	private java.lang.String description;
 
+	public ActiveSubstance() {
+	}
 
+	public java.lang.String getTitle() {
+		return this.title;
+	}
 
+	public void setTitle(java.lang.String title) {
+		this.title = title;
+	}
+
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public ActiveSubstance(java.lang.String title, java.lang.String description) {
+		this.title = title;
+		this.description = description;
+	}
 
 }
