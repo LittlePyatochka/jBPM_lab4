@@ -1,0 +1,1 @@
+{"id":"121b3cf3-72f3-4788-96da-694f5cf8a40c","name":"AttachDate-taskform.frm","model":{"taskName":"AttachDate","processId":"Encyclopediaofdrugs.CreateMedicament","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
