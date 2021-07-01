@@ -11,6 +11,10 @@ public class MedicamentInterract implements java.io.Serializable {
 	private java.lang.String description;
 	private java.lang.Boolean canInterract;
 
+	private com.myspace.encyclopediaofdrugs.Medicament medicament1;
+
+	private com.myspace.encyclopediaofdrugs.Medicament medicament2;
+
 	public MedicamentInterract() {
 	}
 
@@ -30,10 +34,32 @@ public class MedicamentInterract implements java.io.Serializable {
 		this.canInterract = canInterract;
 	}
 
+	public com.myspace.encyclopediaofdrugs.Medicament getMedicament1() {
+		return this.medicament1;
+	}
+
+	public void setMedicament1(
+			com.myspace.encyclopediaofdrugs.Medicament medicament1) {
+		this.medicament1 = medicament1;
+	}
+
+	public com.myspace.encyclopediaofdrugs.Medicament getMedicament2() {
+		return this.medicament2;
+	}
+
+	public void setMedicament2(
+			com.myspace.encyclopediaofdrugs.Medicament medicament2) {
+		this.medicament2 = medicament2;
+	}
+
 	public MedicamentInterract(java.lang.String description,
-			java.lang.Boolean canInterract) {
+			java.lang.Boolean canInterract,
+			com.myspace.encyclopediaofdrugs.Medicament medicament1,
+			com.myspace.encyclopediaofdrugs.Medicament medicament2) {
 		this.description = description;
 		this.canInterract = canInterract;
+		this.medicament1 = medicament1;
+		this.medicament2 = medicament2;
 	}
 
 }
