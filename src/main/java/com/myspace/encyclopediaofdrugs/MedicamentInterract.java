@@ -6,12 +6,34 @@ package com.myspace.encyclopediaofdrugs;
 
 public class MedicamentInterract implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public MedicamentInterract() {
-    }
+	private java.lang.String description;
+	private java.lang.Boolean canInterract;
 
+	public MedicamentInterract() {
+	}
 
+	public java.lang.String getDescription() {
+		return this.description;
+	}
 
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public java.lang.Boolean getCanInterract() {
+		return this.canInterract;
+	}
+
+	public void setCanInterract(java.lang.Boolean canInterract) {
+		this.canInterract = canInterract;
+	}
+
+	public MedicamentInterract(java.lang.String description,
+			java.lang.Boolean canInterract) {
+		this.description = description;
+		this.canInterract = canInterract;
+	}
 
 }
