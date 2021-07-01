@@ -1,1 +1,0 @@
-{"id":"f1a492d8-b5e0-499d-813a-b07509e0d320","name":"Task-taskform.frm","model":{"taskName":"Task","processId":"Encyclopediaofdrugs.CreateMedicament","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
