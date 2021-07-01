@@ -9,7 +9,13 @@ public class Medicament implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.lang.String title;
-	private long group;
+	private MedicamentGroup group;
+
+	private com.myspace.encyclopediaofdrugs.MedicamentFormula formula;
+
+	private com.myspace.encyclopediaofdrugs.MedicamentType type;
+
+	private com.myspace.encyclopediaofdrugs.ActiveSubstance activeSubstances;
 
 	public Medicament() {
 	}
@@ -22,17 +28,50 @@ public class Medicament implements java.io.Serializable {
 		this.title = title;
 	}
 
-	public long getGroup() {
+	public com.myspace.encyclopediaofdrugs.MedicamentGroup getGroup() {
 		return this.group;
 	}
 
-	public void setGroup(long group) {
+	public void setGroup(com.myspace.encyclopediaofdrugs.MedicamentGroup group) {
 		this.group = group;
 	}
 
-	public Medicament(java.lang.String title, long group) {
+	public com.myspace.encyclopediaofdrugs.MedicamentFormula getFormula() {
+		return this.formula;
+	}
+
+	public void setFormula(
+			com.myspace.encyclopediaofdrugs.MedicamentFormula formula) {
+		this.formula = formula;
+	}
+
+	public com.myspace.encyclopediaofdrugs.MedicamentType getType() {
+		return this.type;
+	}
+
+	public void setType(com.myspace.encyclopediaofdrugs.MedicamentType type) {
+		this.type = type;
+	}
+
+	public com.myspace.encyclopediaofdrugs.ActiveSubstance getActiveSubstances() {
+		return this.activeSubstances;
+	}
+
+	public void setActiveSubstances(
+			com.myspace.encyclopediaofdrugs.ActiveSubstance activeSubstances) {
+		this.activeSubstances = activeSubstances;
+	}
+
+	public Medicament(java.lang.String title,
+			com.myspace.encyclopediaofdrugs.MedicamentGroup group,
+			com.myspace.encyclopediaofdrugs.MedicamentFormula formula,
+			com.myspace.encyclopediaofdrugs.MedicamentType type,
+			com.myspace.encyclopediaofdrugs.ActiveSubstance activeSubstances) {
 		this.title = title;
 		this.group = group;
+		this.formula = formula;
+		this.type = type;
+		this.activeSubstances = activeSubstances;
 	}
 
 }
