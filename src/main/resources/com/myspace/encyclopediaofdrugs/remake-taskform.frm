@@ -1,0 +1,1 @@
+{"id":"e62ffe14-f5c4-4892-a24e-ba4885396313","name":"remake-taskform.frm","model":{"taskName":"remake","processId":"Encyclopediaofdrugs.CreateMedicament","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
