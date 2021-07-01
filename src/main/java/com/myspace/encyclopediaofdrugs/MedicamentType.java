@@ -8,7 +8,31 @@ public class MedicamentType implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private java.lang.String title;
+	private java.lang.String description;
+
 	public MedicamentType() {
+	}
+
+	public java.lang.String getTitle() {
+		return this.title;
+	}
+
+	public void setTitle(java.lang.String title) {
+		this.title = title;
+	}
+
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public MedicamentType(java.lang.String title, java.lang.String description) {
+		this.title = title;
+		this.description = description;
 	}
 
 }
