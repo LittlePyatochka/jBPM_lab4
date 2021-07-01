@@ -17,6 +17,8 @@ public class Article implements java.io.Serializable {
 
 	private java.lang.String price;
 
+	private java.util.List<java.lang.String> links;
+
 	public Article() {
 	}
 
@@ -79,12 +81,21 @@ public class Article implements java.io.Serializable {
 		this.price = price;
 	}
 
+	public java.util.List<java.lang.String> getLinks() {
+		return this.links;
+	}
+
+	public void setLinks(java.util.List<java.lang.String> links) {
+		this.links = links;
+	}
+
 	public Article(com.myspace.encyclopediaofdrugs.Medicament medicament,
 			com.myspace.encyclopediaofdrugs.MedicamentFormula formula,
 			com.myspace.encyclopediaofdrugs.MedicamentGroup group,
 			com.myspace.encyclopediaofdrugs.MedicamentInterract interract,
 			com.myspace.encyclopediaofdrugs.MedicamentType type,
-			java.time.OffsetDateTime dateChange, java.lang.String price) {
+			java.time.OffsetDateTime dateChange, java.lang.String price,
+			java.util.List<java.lang.String> links) {
 		this.medicament = medicament;
 		this.formula = formula;
 		this.group = group;
@@ -92,6 +103,7 @@ public class Article implements java.io.Serializable {
 		this.type = type;
 		this.dateChange = dateChange;
 		this.price = price;
+		this.links = links;
 	}
 
 }
