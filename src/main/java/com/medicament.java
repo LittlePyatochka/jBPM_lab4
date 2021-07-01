@@ -6,12 +6,33 @@ package com;
 
 public class medicament implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public medicament() {
-    }
+	private java.lang.String title;
+	private long group;
 
+	public medicament() {
+	}
 
+	public java.lang.String getTitle() {
+		return this.title;
+	}
 
+	public void setTitle(java.lang.String title) {
+		this.title = title;
+	}
+
+	public long getGroup() {
+		return this.group;
+	}
+
+	public void setGroup(long group) {
+		this.group = group;
+	}
+
+	public medicament(java.lang.String title, long group) {
+		this.title = title;
+		this.group = group;
+	}
 
 }
