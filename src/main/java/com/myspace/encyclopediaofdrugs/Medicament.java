@@ -16,7 +16,7 @@ public class Medicament implements java.io.Serializable {
 
 	private com.myspace.encyclopediaofdrugs.MedicamentType type;
 
-	private com.myspace.encyclopediaofdrugs.ActiveSubstance activeSubstances;
+	private java.util.List<com.myspace.encyclopediaofdrugs.ActiveSubstance> activeSubstances;
 
 	public Medicament() {
 	}
@@ -54,20 +54,21 @@ public class Medicament implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public com.myspace.encyclopediaofdrugs.ActiveSubstance getActiveSubstances() {
+	public java.util.List<com.myspace.encyclopediaofdrugs.ActiveSubstance> getActiveSubstances() {
 		return this.activeSubstances;
 	}
 
 	public void setActiveSubstances(
-			com.myspace.encyclopediaofdrugs.ActiveSubstance activeSubstances) {
+			java.util.List<com.myspace.encyclopediaofdrugs.ActiveSubstance> activeSubstances) {
 		this.activeSubstances = activeSubstances;
 	}
 
-	public Medicament(java.lang.String title,
+	public Medicament(
+			java.lang.String title,
 			com.myspace.encyclopediaofdrugs.MedicamentGroup group,
 			com.myspace.encyclopediaofdrugs.MedicamentFormula formula,
 			com.myspace.encyclopediaofdrugs.MedicamentType type,
-			com.myspace.encyclopediaofdrugs.ActiveSubstance activeSubstances) {
+			java.util.List<com.myspace.encyclopediaofdrugs.ActiveSubstance> activeSubstances) {
 		this.title = title;
 		this.group = group;
 		this.formula = formula;
