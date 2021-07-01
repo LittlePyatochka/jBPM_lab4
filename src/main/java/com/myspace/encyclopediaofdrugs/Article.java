@@ -18,6 +18,8 @@ public class Article implements java.io.Serializable {
 
 	private java.lang.String title;
 
+	private com.myspace.encyclopediaofdrugs.Medicament medicament;
+
 	public Article() {
 	}
 
@@ -61,14 +63,25 @@ public class Article implements java.io.Serializable {
 		this.title = title;
 	}
 
+	public com.myspace.encyclopediaofdrugs.Medicament getMedicament() {
+		return this.medicament;
+	}
+
+	public void setMedicament(
+			com.myspace.encyclopediaofdrugs.Medicament medicament) {
+		this.medicament = medicament;
+	}
+
 	public Article(java.time.OffsetDateTime dateChange, java.lang.String price,
 			java.util.List<java.lang.String> links,
-			java.lang.Boolean isPublished, java.lang.String title) {
+			java.lang.Boolean isPublished, java.lang.String title,
+			com.myspace.encyclopediaofdrugs.Medicament medicament) {
 		this.dateChange = dateChange;
 		this.price = price;
 		this.links = links;
 		this.isPublished = isPublished;
 		this.title = title;
+		this.medicament = medicament;
 	}
 
 }
