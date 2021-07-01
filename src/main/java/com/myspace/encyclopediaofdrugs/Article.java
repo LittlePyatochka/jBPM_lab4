@@ -15,11 +15,7 @@ public class Article implements java.io.Serializable {
 	private com.myspace.encyclopediaofdrugs.MedicamentType type;
 	private java.time.OffsetDateTime dateChange;
 
-	private java.lang.String editor;
-
-	private java.lang.String pharmacist;
-
-	private java.lang.String vendor;
+	private java.lang.String price;
 
 	public Article() {
 	}
@@ -75,28 +71,12 @@ public class Article implements java.io.Serializable {
 		this.dateChange = dateChange;
 	}
 
-	public java.lang.String getEditor() {
-		return this.editor;
+	public java.lang.String getPrice() {
+		return this.price;
 	}
 
-	public void setEditor(java.lang.String editor) {
-		this.editor = editor;
-	}
-
-	public java.lang.String getPharmacist() {
-		return this.pharmacist;
-	}
-
-	public void setPharmacist(java.lang.String pharmacist) {
-		this.pharmacist = pharmacist;
-	}
-
-	public java.lang.String getVendor() {
-		return this.vendor;
-	}
-
-	public void setVendor(java.lang.String vendor) {
-		this.vendor = vendor;
+	public void setPrice(java.lang.String price) {
+		this.price = price;
 	}
 
 	public Article(com.myspace.encyclopediaofdrugs.Medicament medicament,
@@ -104,17 +84,14 @@ public class Article implements java.io.Serializable {
 			com.myspace.encyclopediaofdrugs.MedicamentGroup group,
 			com.myspace.encyclopediaofdrugs.MedicamentInterract interract,
 			com.myspace.encyclopediaofdrugs.MedicamentType type,
-			java.time.OffsetDateTime dateChange, java.lang.String editor,
-			java.lang.String pharmacist, java.lang.String vendor) {
+			java.time.OffsetDateTime dateChange, java.lang.String price) {
 		this.medicament = medicament;
 		this.formula = formula;
 		this.group = group;
 		this.interract = interract;
 		this.type = type;
 		this.dateChange = dateChange;
-		this.editor = editor;
-		this.pharmacist = pharmacist;
-		this.vendor = vendor;
+		this.price = price;
 	}
 
 }
