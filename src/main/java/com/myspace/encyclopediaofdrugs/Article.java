@@ -13,8 +13,13 @@ public class Article implements java.io.Serializable {
 	private com.myspace.encyclopediaofdrugs.MedicamentGroup group;
 	private com.myspace.encyclopediaofdrugs.MedicamentInterract interract;
 	private com.myspace.encyclopediaofdrugs.MedicamentType type;
-	private java.lang.String author;
 	private java.time.OffsetDateTime dateChange;
+
+	private java.lang.String editor;
+
+	private java.lang.String pharmacist;
+
+	private java.lang.String vendor;
 
 	public Article() {
 	}
@@ -62,14 +67,6 @@ public class Article implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public java.lang.String getAuthor() {
-		return this.author;
-	}
-
-	public void setAuthor(java.lang.String author) {
-		this.author = author;
-	}
-
 	public java.time.OffsetDateTime getDateChange() {
 		return this.dateChange;
 	}
@@ -78,19 +75,46 @@ public class Article implements java.io.Serializable {
 		this.dateChange = dateChange;
 	}
 
+	public java.lang.String getEditor() {
+		return this.editor;
+	}
+
+	public void setEditor(java.lang.String editor) {
+		this.editor = editor;
+	}
+
+	public java.lang.String getPharmacist() {
+		return this.pharmacist;
+	}
+
+	public void setPharmacist(java.lang.String pharmacist) {
+		this.pharmacist = pharmacist;
+	}
+
+	public java.lang.String getVendor() {
+		return this.vendor;
+	}
+
+	public void setVendor(java.lang.String vendor) {
+		this.vendor = vendor;
+	}
+
 	public Article(com.myspace.encyclopediaofdrugs.Medicament medicament,
 			com.myspace.encyclopediaofdrugs.MedicamentFormula formula,
 			com.myspace.encyclopediaofdrugs.MedicamentGroup group,
 			com.myspace.encyclopediaofdrugs.MedicamentInterract interract,
 			com.myspace.encyclopediaofdrugs.MedicamentType type,
-			java.lang.String author, java.time.OffsetDateTime dateChange) {
+			java.time.OffsetDateTime dateChange, java.lang.String editor,
+			java.lang.String pharmacist, java.lang.String vendor) {
 		this.medicament = medicament;
 		this.formula = formula;
 		this.group = group;
 		this.interract = interract;
 		this.type = type;
-		this.author = author;
 		this.dateChange = dateChange;
+		this.editor = editor;
+		this.pharmacist = pharmacist;
+		this.vendor = vendor;
 	}
 
 }
