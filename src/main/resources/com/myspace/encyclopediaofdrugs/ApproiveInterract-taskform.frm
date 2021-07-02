@@ -1,0 +1,1 @@
+{"id":"a152e8dd-1151-4313-b0fe-328761529cba","name":"ApproiveInterract-taskform.frm","model":{"taskName":"ApproiveInterract","processId":"Encyclopediaofdrugs.CreateMedicament","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

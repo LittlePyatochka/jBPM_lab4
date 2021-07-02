@@ -1,0 +1,1 @@
+{"id":"90df29c6-95f6-420e-8bba-263eb4b020ea","name":"ApproiveFormula-taskform.frm","model":{"taskName":"ApproiveFormula","processId":"Encyclopediaofdrugs.CreateMedicament","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

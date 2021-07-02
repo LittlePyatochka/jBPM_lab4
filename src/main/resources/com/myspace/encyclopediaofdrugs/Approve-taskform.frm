@@ -1,0 +1,1 @@
+{"id":"50b44706-ea7f-47cb-8f55-8578d45bd1f1","name":"Approve-taskform.frm","model":{"taskName":"Approve","processId":"Encyclopediaofdrugs.CreateMedicament","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
